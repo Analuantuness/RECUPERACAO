@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site de venda de maquiagem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><header>
+  <h1>O segredo da maquiagem é revelar o que há de mais belo em você.</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<button class="menu-toggle">
+  <i class="fa fa-lg fa-bars"></i>
+</button>
+<aside>
+  <div id="switch" onclick="toggleMode()">
+    <button id="bnt" type="button"></button>
+    <span></span>
+
+</aside>
+
+  <div class="container-slide">
+    <div class="action-button" id="previous">&laquo</div>
+    <div class="container-items" ></div>
+    <div class="action-button" id="next">&raquo</div>
+</div>
+  <div class="container">
+    <div class="product">
+      <img src="base.png" alt="Product image">
+      <div class="product-info">
+        <h2>Base</h2>
+        <p>A base oferece um acabamento matte perfeito, além de longa duração e resistência à água, 
+          tornando-se aliada para uso diário.</p>
+        <p>Preço: R$ 100,00</p>
+        <button>Comprar</button>
+      </div>
+      <div class="product">
+        <button class="heart-button" onclick="toggleHeart(event)">❤️</button>
+    </div>
+    </div>
+    <div class="product">
+      <img src="batom.png" alt="Product image">
+      <div class="product-info">
+        <h2>Batom</h2>
+        <p>Clássico e Queridinho Entre as Fãs de Maquiagem. </p>
+        <p>Preço: R$ 80,00</p>
+        <button>Comprar</button>
+      </div>
+      <div class="product">
+        <button class="heart-button" onclick="toggleHeart(event)">❤️</button>
+    </div>
+    </div>
+    <div class="product">
+      <img src="ilu.png" alt="Product image">
+      <div class="product-info">
+        <h2>Iluminador</h2>
+        <p>Para destacar regiões estratégicas do rosto, valorizar o restante da make e dar aquele efeito especial.</p>
+        <p>Preço: R$ 95,00</p>
+        <button>Comprar</button>
+      </div>
+      <div class="product">
+        <button class="heart-button" onclick="toggleHeart(event)">❤️</button>
+    </div>
+    </div>
+  </div>
+  <footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>    
+      <div class="rodape">
+      <span>Todos os direitos reservados &copy; 2023</span>
+  </footer>
+</body>
+
+</html>
